@@ -1,3 +1,4 @@
+import 'package:calculator/CalculatorResultText.dart';
 import 'package:flutter/material.dart';
 
 import 'CalculatorButton.dart';
@@ -21,9 +22,14 @@ import 'CalculatorButton.dart';
   return Column(
   crossAxisAlignment: CrossAxisAlignment.start,
   children: [
-  Expanded(child: Text(resultTv,style: TextStyle(fontSize: 32),)),
+  Expanded(child:
+
+
+           CalculatorResultText(resultTv)),
+
   Expanded(
   child: Row(
+    mainAxisAlignment:MainAxisAlignment.center ,
   crossAxisAlignment: CrossAxisAlignment.stretch,
   children: [
   CalculatorButton('7',onDigitClick),
